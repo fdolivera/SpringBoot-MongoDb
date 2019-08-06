@@ -1,0 +1,22 @@
+package project.spring.mongo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import project.spring.mongo.domain.Post;
+import project.spring.mongo.repository.PostRepository;
+import project.spring.mongo.service.exception.ObjectNotFound;
+
+public class PostService {
+
+	@Autowired
+	private PostRepository postRepository;
+	
+	public Post findById(String id) {
+		
+		Post post = postRepository.findOne(id);
+		if (post == null) {
+			throw new ObjectNotFound("Objeto nao encontrado");
+		}
+		return post;
+	}
+}
