@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import project.spring.mongo.domain.Post;
 import project.spring.mongo.domain.User;
 import project.spring.mongo.domain.dto.UserDTO;
 import project.spring.mongo.service.UserService;
@@ -60,6 +61,12 @@ public class UserResource {
 		obj = userService.upDate(obj);
 		HttpStatus status = HttpStatus.OK;
 		return ResponseEntity.status(status).build();
+	}
+	
+	@RequestMapping(value="/{id}/posts", method = RequestMethod.GET)
+	public ResponseEntity<List<Post>> findPost(@PathVariable String id, String posts) {
+		User obj = userService.findById(id);
+		return ResponseEntity.ok().body(obj.getPosts());
 	}
 }
 
