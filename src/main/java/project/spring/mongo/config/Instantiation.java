@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 import project.spring.mongo.domain.Post;
 import project.spring.mongo.domain.User;
+import project.spring.mongo.domain.dto.AuthorDTO;
 import project.spring.mongo.repository.PostRepository;
 import project.spring.mongo.repository.UserRepository;
 
@@ -35,10 +36,11 @@ public class Instantiation implements CommandLineRunner {
 		User alex = new User(null, "Alex Green", "alex@gmail.com");
 		User bob = new User(null, "Bob Grey", "bob@gmail.com");
 		
-		Post post = new Post(null, sdf.parse("22/07/2019"), "Partiu ferias", "Vou para os EUA", maria);
-		Post post1 = new Post(null, sdf.parse("23/07/2019"), "Agora vai", "Elevando o nivel", maria);
-		
 		userRepository.save(Arrays.asList(maria, alex, bob));
+		
+		Post post = new Post(null, sdf.parse("22/07/2019"), "Partiu ferias", "Vou para os EUA", new AuthorDTO(maria));
+		Post post1 = new Post(null, sdf.parse("23/07/2019"), "Agora vai", "Elevando o nivel",  new AuthorDTO(maria));
+		
 		postRepository.save(Arrays.asList(post, post1));
 	}	
 
