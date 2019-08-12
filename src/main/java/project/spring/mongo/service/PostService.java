@@ -1,5 +1,7 @@
 package project.spring.mongo.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,5 +22,9 @@ public class PostService {
 			throw new ObjectNotFound("Objeto nao encontrado");
 		}
 		return post;
+	}
+	
+	public List<Post> findTitle(String text) {
+		return postRepository.findByTitleContainingIgnoreCase(text);
 	}
 }
