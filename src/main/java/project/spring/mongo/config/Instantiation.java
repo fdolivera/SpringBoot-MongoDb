@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
-import project.spring.mongo.domain.Post;
-import project.spring.mongo.domain.User;
-import project.spring.mongo.domain.dto.AuthorDTO;
-import project.spring.mongo.domain.dto.CommentDTO;
+import project.spring.mongo.dto.AuthorDTO;
+import project.spring.mongo.dto.CommentDTO;
+import project.spring.mongo.model.Post;
+import project.spring.mongo.model.User;
 import project.spring.mongo.repository.PostRepository;
 import project.spring.mongo.repository.UserRepository;
 

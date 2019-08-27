@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import project.spring.mongo.domain.Post;
+import project.spring.mongo.model.Post;
 
 @Repository
 public interface PostRepository extends MongoRepository<Post, String> {

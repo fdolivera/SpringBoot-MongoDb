@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import project.spring.mongo.domain.Post;
+import project.spring.mongo.model.Post;
 import project.spring.mongo.resources.util.URL;
 import project.spring.mongo.service.PostService;
 

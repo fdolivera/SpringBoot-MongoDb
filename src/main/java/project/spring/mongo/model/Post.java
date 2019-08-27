@@ -1,4 +1,4 @@
-package project.spring.mongo.domain;
+package project.spring.mongo.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import project.spring.mongo.domain.dto.AuthorDTO;
-import project.spring.mongo.domain.dto.CommentDTO;
+import project.spring.mongo.dto.AuthorDTO;
+import project.spring.mongo.dto.CommentDTO;
 
 @Document
 public class Post implements Serializable{

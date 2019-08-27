@@ -1,4 +1,4 @@
-package project.spring.mongo.domain.dto;
+package project.spring.mongo.dto;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import project.spring.mongo.domain.Post;
+import project.spring.mongo.model.Post;
 import project.spring.mongo.repository.PostRepository;
 import project.spring.mongo.service.exception.ObjectNotFound;
 

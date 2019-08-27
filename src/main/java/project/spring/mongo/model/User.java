@@ -1,4 +1,4 @@
-package project.spring.mongo.domain;
+package project.spring.mongo.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;

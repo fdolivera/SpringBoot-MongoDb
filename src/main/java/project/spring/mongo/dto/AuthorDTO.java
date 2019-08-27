@@ -1,8 +1,8 @@
-package project.spring.mongo.domain.dto;
+package project.spring.mongo.dto;
 
 import java.io.Serializable;
 
-import project.spring.mongo.domain.User;
+import project.spring.mongo.model.User;
 
 public class AuthorDTO implements Serializable{
 

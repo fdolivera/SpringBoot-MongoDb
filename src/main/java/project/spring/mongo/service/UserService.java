@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import project.spring.mongo.domain.User;
-import project.spring.mongo.domain.dto.UserDTO;
+import project.spring.mongo.dto.UserDTO;
+import project.spring.mongo.model.User;
 import project.spring.mongo.repository.UserRepository;
 import project.spring.mongo.service.exception.ObjectNotFound;
 

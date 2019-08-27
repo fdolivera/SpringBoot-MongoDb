@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import project.spring.mongo.domain.Post;
-import project.spring.mongo.domain.User;
-import project.spring.mongo.domain.dto.UserDTO;
+import project.spring.mongo.dto.UserDTO;
+import project.spring.mongo.model.Post;
+import project.spring.mongo.model.User;
 import project.spring.mongo.service.UserService;
 
 @RestController
